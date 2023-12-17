@@ -10,6 +10,7 @@ arr.forEach(button => {
             let result = eval(inputString);
             input.value = result;
             addToHistory(inputString, result);
+            inputString = result;
         }
         else if (e.target.innerHTML == 'AC') {
             inputString = "";
